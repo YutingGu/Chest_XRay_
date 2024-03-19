@@ -91,12 +91,12 @@ if __name__ == '__main__':
     
     
     # Generate label index csv file
-    
     f_de = open(os.path.join(dataset_dir, 'CXR8_Data_Entry_2017.csv'))
     dataset_type = ['train', 'val', 'test']
     f = {t:open(os.path.join(dataset_dir, t+'_list.txt')) for t in dataset_type}
     wf = {t:open(os.path.join(dataset_dir, t+'_label.csv'), 'w+', newline='') for t in dataset_type}
     writer = {t:csv.writer(wf[t]) for t in dataset_type}
+    
     # write header
     for t in dataset_type:
         writer[t].writerow(dist_csv_col)
@@ -105,31 +105,28 @@ if __name__ == '__main__':
     lines_de = f_de.read().splitlines()
     del lines_de[0]
     image_name_list = {t:f[t].read().split('\n') for t in dataset_type}
-
-    #parse the file
-    pos = {t:0 for t in dataset_type}
-    for i in range(len(lines_de)):
-        split = lines_de[i].split(',')
-        file_name = split[0]
-        patient_id = int(split[3])-1
-        label_string = split[1]
-        labels = label_string.split('|')
-        vector = [0 for _ in range(14)]
-        for label in labels:
-            if label != "No Finding":
-                vector[disease_categories[label]] = 1
-        output = []
-        output.append(file_name)
-        output += vector
-        
-        # write to train, val, or test
-        for t in dataset_type:
-            if pos[t] >= len(image_name_list[t]):
-                continue
-            if file_name == image_name_list[t][pos[t]]:
-                writer[t].writerow(output)
-                pos[t] += 1
     
+    #parse the file
+    file_label = {}
+    for i in range(len(lines_de)):
+        file_name = lines_de[i].split(',')[0] 
+        label_string = lines_de[i].split(',')[1] 
+        file_label[file_name] = label_string
+    
+    pos = {t:0 for t in dataset_type}
+    for t in dataset_type:
+        image_name_list_t = image_name_list[t]
+        for j in range(len(image_name_list_t)):
+            file_name = image_name_list_t[j]
+            labels = file_label[file_name].split('|')
+            vector = [0 for _ in range(14)]
+            for label in labels:
+                if label != "No Finding":
+                    vector[disease_categories[label]] = 1
+            writer[t].writerow([file_name] + vector)
+            pos[t] += 1
+    
+    print(pos)
     f_de.close()
     for t in dataset_type:
         f[t].close()
