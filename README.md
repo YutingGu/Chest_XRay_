@@ -31,7 +31,7 @@ This folder contains the original data downloaded from https://paperswithcode.co
 - `train_list.txt`, `val_list.txt`,
 - `test_label.csv`, `train_label.csv`, `val_label.csv`
 <br />
-The following is the method for doing one-hot encoded label generation and dataset split:
+**The following is the method for doing one-hot encoded label generation and dataset split:**
 <br />
 Change directory to `Utilities`, use terminal to run the [label_generator.py](Utilities/label_generator.py) to generate one-hot encoded labels for train/validation/test set.
 
