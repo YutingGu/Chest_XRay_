@@ -26,10 +26,10 @@ python -m ipykernel install --user --name=base --display-name "base-env"     # "
 ### Step 3 - Image Data Download
 The data used for this project includes image data and label data. Since image data have not been uploaded to GitHub, we need a further step to download the image data to HPC.
 - On the Imperial Jupyter notebook, open python, choose "base-env", open `Dataset_Download.ipynb` in the `Chest_XRay_Classification` folder
-- Run all cells in [Dataset_Download.ipynb](Dataset_Download.ipynb) to download the dataset.
+- Run all cells in [Dataset_Download.ipynb](Dataset_Download.ipynb) to download and unzip the image dataset.
 
 **Note:**
-* Dataset will be downloaded under the the folder `Dataset/images/`. All files end with `.tar.gz.` can be deleted after running all cells to save space.
+* Dataset will be downloaded under the the folder `Dataset/images/`. All files end with `.tar.gz.` can be deleted after running all cells to save space, these are the compressed image files.
 * Please make sure in your [.gitignore](.gitignore) file, `Dataset/images/` is included to avoid uploading the whole dataset
 
 ## Folder Explanation
