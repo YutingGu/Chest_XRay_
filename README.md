@@ -15,10 +15,10 @@ git clone https://github.com/YutingGu/Chest_XRay_Classification.git
 ### Step 2 - Image Data Download
 The data used for this project includes image data and label data. Since image data have not been uploaded to GitHub, we need a further step to download the image data to HPC.
 - Run all cells in [Dataset_Download.ipynb](Dataset_Download.ipynb) to download the dataset.
-<br />
-Dataset will be downloaded under the the folder `Dataset/images/`. All files end with `.tar.gz.` can be deleted after running all cells to save space.
-<br />
-Please make sure in your [.gitignore](.gitignore) file, `Dataset/images/` is included to avoid uploading the whole dataset
+
+**Note:**
+* Dataset will be downloaded under the the folder `Dataset/images/`. All files end with `.tar.gz.` can be deleted after running all cells to save space.
+* Please make sure in your [.gitignore](.gitignore) file, `Dataset/images/` is included to avoid uploading the whole dataset
 
 ## Folder Explanation
 ### The 'Dataset' folder
@@ -32,7 +32,7 @@ This folder contains the original data downloaded from https://paperswithcode.co
 - `test_label.csv`, `train_label.csv`, `val_label.csv`
 
 **The following is the method for doing one-hot encoded label generation and dataset split:**
-- Change directory to `Utilities`, use terminal to run the [label_generator.py](Utilities/label_generator.py) to generate one-hot encoded labels for train/validation/test set.
+* Change directory to `Utilities`, use terminal to run the [label_generator.py](Utilities/label_generator.py) to generate one-hot encoded labels for train/validation/test set.
 
 
 
