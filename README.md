@@ -18,9 +18,9 @@ The jupyter notebook on Imperial server will be used for this project. To establ
 2. launch with the option that includes a `GPU`
 3. go to terminal, do
 ```
-module load anaconda3/personal # load the anaconda3/personal module on HPC (set up the Anaconda Python environment)
-pip install ipykernel # This package is necessary for running Python code within Jupyter notebooks.
-python -m ipykernel install --user --name=base --display-name "base-env" # "base-env" uses this setup. This means packages installed in HPC can be used when we select the "base-env" kernel.
+module load anaconda3/personal                                               # load the anaconda3/personal module on HPC (set up the Anaconda Python environment)
+pip install ipykernel                                                        # This package is necessary for running Python code within Jupyter notebooks.
+python -m ipykernel install --user --name=base --display-name "base-env"     # "base-env" uses this setup. This means packages installed in HPC can be used when we select the "base-env" kernel.
 ```
 
 ### Step 3 - Image Data Download
