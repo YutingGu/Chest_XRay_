@@ -16,7 +16,8 @@ git clone https://github.com/YutingGu/Chest_XRay_Classification.git
 The data used for this project includes image data and label data. Since image data have not been uploaded to GitHub, we need a further step to download the image data to HPC.
 - Run all cells in [Dataset_Download.ipynb](Dataset_Download.ipynb) to download the dataset.
 <br />
-Dataset will be downloaded under the the folder `Dataset/images/`. All files end with `.tar.gz.` can be deleted after running all cells to save space. *Please make sure in your [.gitignore](.gitignore) file, `Dataset/images/` is included to avoid uploading the whole dataset* 
+Dataset will be downloaded under the the folder `Dataset/images/`. All files end with `.tar.gz.` can be deleted after running all cells to save space.
+<br />*Please make sure in your [.gitignore](.gitignore) file, `Dataset/images/` is included to avoid uploading the whole dataset*
 
 ## Folder Explanation
 ### The 'Dataset' folder
