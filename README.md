@@ -3,7 +3,7 @@
 ## General Instructions
 ### Step 1 - clone this `Chest_XRay_Classification` GitHub folder
 - In Github, create a personal token if not yet done so (Settings -> Developer Settings -> Personal access tokens). This will be used when logging in to GitHub through the git clone command.
-- Login to Imperial HPC and create a personal folder that will be used for this ML project.
+- Login to Imperial HPC and create a personal folder in HOME that will be used for this ML project.
 - Clone this HPC folder to the `Chest_XRay_Classification` GitHub folder, using
 ```
 git clone https://github.com/YutingGu/Chest_XRay_Classification.git
@@ -12,12 +12,24 @@ git clone https://github.com/YutingGu/Chest_XRay_Classification.git
 - After logging in, the GitHub folder will be successfully clone to your HPC folder.
 
 
-### Step 2 - Image Data Download
+### Step 2 - Access the jupyter notebook on HPC
+The jupyter notebook on Imperial server will be used for this project. To establish connection, 
+1. go to https://jupyter.rcs.imperial.ac.uk
+2. launch with the option that includes a `GPU`
+3. go to terminal, do
+```
+module load anaconda3/personal                                               # load the anaconda3/personal module on HPC (set up the Anaconda Python environment)
+pip install ipykernel                                                        # This package is necessary for running Python code within Jupyter notebooks.
+python -m ipykernel install --user --name=base --display-name "base-env"     # "base-env" uses this setup. This means packages installed in HPC can be used when we select the "base-env" kernel.
+```
+
+### Step 3 - Image Data Download
 The data used for this project includes image data and label data. Since image data have not been uploaded to GitHub, we need a further step to download the image data to HPC.
-- Run all cells in [Dataset_Download.ipynb](Dataset_Download.ipynb) to download the dataset.
+- On the Imperial Jupyter notebook, open python, choose "base-env", open `Dataset_Download.ipynb` in the `Chest_XRay_Classification` folder
+- Run all cells in [Dataset_Download.ipynb](Dataset_Download.ipynb) to download and unzip the image dataset.
 
 **Note:**
-* Dataset will be downloaded under the the folder `Dataset/images/`. All files end with `.tar.gz.` can be deleted after running all cells to save space.
+* Dataset will be downloaded under the the folder `Dataset/images/`. All files end with `.tar.gz.` can be deleted after running all cells to save space, these are the compressed image files.
 * Please make sure in your [.gitignore](.gitignore) file, `Dataset/images/` is included to avoid uploading the whole dataset
 
 ## Folder Explanation
