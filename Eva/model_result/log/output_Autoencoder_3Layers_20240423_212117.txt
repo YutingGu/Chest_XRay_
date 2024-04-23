@@ -15,3 +15,16 @@
 [Epoch 5] Model checkpoint is saved.
 -------------------------------[Epoch 6]---------------------------------
 [Epoch 6] Training...
+[Epoch 6] Model checkpoint is saved.
+-------------------------------[Epoch 7]---------------------------------
+[Epoch 7] Training...
+[Epoch 7] Model checkpoint is saved.
+-------------------------------[Epoch 8]---------------------------------
+[Epoch 8] Training...
+[Epoch 8] Model checkpoint is saved.
+-------------------------------[Epoch 9]---------------------------------
+[Epoch 9] Training...
+[Epoch 9] Model checkpoint is saved.
+-------------------------------[Epoch 10]---------------------------------
+[Epoch 10] Training...
+[Epoch 10] Model checkpoint is saved.
