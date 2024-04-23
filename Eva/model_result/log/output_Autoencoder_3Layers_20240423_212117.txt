@@ -12,3 +12,6 @@
 [Epoch 4] Model checkpoint is saved.
 -------------------------------[Epoch 5]---------------------------------
 [Epoch 5] Training...
+[Epoch 5] Model checkpoint is saved.
+-------------------------------[Epoch 6]---------------------------------
+[Epoch 6] Training...
