@@ -1,0 +1,18 @@
+Is CUDA (GPU) available: True
+Number of GPU(s) available: 1
+GPU 0: Quadro RTX 6000
+Training set size: 91295
+Validation set size: 13175
+cuda
+Parameter encoder.0.weight is on device: cuda:0
+Parameter encoder.0.bias is on device: cuda:0
+Parameter encoder.2.weight is on device: cuda:0
+Parameter encoder.2.bias is on device: cuda:0
+Parameter decoder.0.weight is on device: cuda:0
+Parameter decoder.0.bias is on device: cuda:0
+Parameter decoder.2.weight is on device: cuda:0
+Parameter decoder.2.bias is on device: cuda:0
+train_loader is on device: cuda
+val_loader is on device: cuda
+-------------------------------[Epoch 1]--------------------------------- 
+[Epoch 1] Training... 

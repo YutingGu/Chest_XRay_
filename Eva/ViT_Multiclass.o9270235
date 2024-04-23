@@ -1,0 +1,404 @@
+Is CUDA (GPU) available: True
+Number of GPU(s) available: 1
+GPU 0: Quadro RTX 6000
+Training set size: 46916
+Validation set size: 7054
+cuda
+Parameter cls_token is on device: cuda:0
+Parameter pos_embed is on device: cuda:0
+Parameter patch_embed.proj.weight is on device: cuda:0
+Parameter patch_embed.proj.bias is on device: cuda:0
+Parameter blocks.0.norm1.weight is on device: cuda:0
+Parameter blocks.0.norm1.bias is on device: cuda:0
+Parameter blocks.0.attn.qkv.weight is on device: cuda:0
+Parameter blocks.0.attn.qkv.bias is on device: cuda:0
+Parameter blocks.0.attn.proj.weight is on device: cuda:0
+Parameter blocks.0.attn.proj.bias is on device: cuda:0
+Parameter blocks.0.norm2.weight is on device: cuda:0
+Parameter blocks.0.norm2.bias is on device: cuda:0
+Parameter blocks.0.mlp.fc1.weight is on device: cuda:0
+Parameter blocks.0.mlp.fc1.bias is on device: cuda:0
+Parameter blocks.0.mlp.fc2.weight is on device: cuda:0
+Parameter blocks.0.mlp.fc2.bias is on device: cuda:0
+Parameter blocks.1.norm1.weight is on device: cuda:0
+Parameter blocks.1.norm1.bias is on device: cuda:0
+Parameter blocks.1.attn.qkv.weight is on device: cuda:0
+Parameter blocks.1.attn.qkv.bias is on device: cuda:0
+Parameter blocks.1.attn.proj.weight is on device: cuda:0
+Parameter blocks.1.attn.proj.bias is on device: cuda:0
+Parameter blocks.1.norm2.weight is on device: cuda:0
+Parameter blocks.1.norm2.bias is on device: cuda:0
+Parameter blocks.1.mlp.fc1.weight is on device: cuda:0
+Parameter blocks.1.mlp.fc1.bias is on device: cuda:0
+Parameter blocks.1.mlp.fc2.weight is on device: cuda:0
+Parameter blocks.1.mlp.fc2.bias is on device: cuda:0
+Parameter blocks.2.norm1.weight is on device: cuda:0
+Parameter blocks.2.norm1.bias is on device: cuda:0
+Parameter blocks.2.attn.qkv.weight is on device: cuda:0
+Parameter blocks.2.attn.qkv.bias is on device: cuda:0
+Parameter blocks.2.attn.proj.weight is on device: cuda:0
+Parameter blocks.2.attn.proj.bias is on device: cuda:0
+Parameter blocks.2.norm2.weight is on device: cuda:0
+Parameter blocks.2.norm2.bias is on device: cuda:0
+Parameter blocks.2.mlp.fc1.weight is on device: cuda:0
+Parameter blocks.2.mlp.fc1.bias is on device: cuda:0
+Parameter blocks.2.mlp.fc2.weight is on device: cuda:0
+Parameter blocks.2.mlp.fc2.bias is on device: cuda:0
+Parameter blocks.3.norm1.weight is on device: cuda:0
+Parameter blocks.3.norm1.bias is on device: cuda:0
+Parameter blocks.3.attn.qkv.weight is on device: cuda:0
+Parameter blocks.3.attn.qkv.bias is on device: cuda:0
+Parameter blocks.3.attn.proj.weight is on device: cuda:0
+Parameter blocks.3.attn.proj.bias is on device: cuda:0
+Parameter blocks.3.norm2.weight is on device: cuda:0
+Parameter blocks.3.norm2.bias is on device: cuda:0
+Parameter blocks.3.mlp.fc1.weight is on device: cuda:0
+Parameter blocks.3.mlp.fc1.bias is on device: cuda:0
+Parameter blocks.3.mlp.fc2.weight is on device: cuda:0
+Parameter blocks.3.mlp.fc2.bias is on device: cuda:0
+Parameter blocks.4.norm1.weight is on device: cuda:0
+Parameter blocks.4.norm1.bias is on device: cuda:0
+Parameter blocks.4.attn.qkv.weight is on device: cuda:0
+Parameter blocks.4.attn.qkv.bias is on device: cuda:0
+Parameter blocks.4.attn.proj.weight is on device: cuda:0
+Parameter blocks.4.attn.proj.bias is on device: cuda:0
+Parameter blocks.4.norm2.weight is on device: cuda:0
+Parameter blocks.4.norm2.bias is on device: cuda:0
+Parameter blocks.4.mlp.fc1.weight is on device: cuda:0
+Parameter blocks.4.mlp.fc1.bias is on device: cuda:0
+Parameter blocks.4.mlp.fc2.weight is on device: cuda:0
+Parameter blocks.4.mlp.fc2.bias is on device: cuda:0
+Parameter blocks.5.norm1.weight is on device: cuda:0
+Parameter blocks.5.norm1.bias is on device: cuda:0
+Parameter blocks.5.attn.qkv.weight is on device: cuda:0
+Parameter blocks.5.attn.qkv.bias is on device: cuda:0
+Parameter blocks.5.attn.proj.weight is on device: cuda:0
+Parameter blocks.5.attn.proj.bias is on device: cuda:0
+Parameter blocks.5.norm2.weight is on device: cuda:0
+Parameter blocks.5.norm2.bias is on device: cuda:0
+Parameter blocks.5.mlp.fc1.weight is on device: cuda:0
+Parameter blocks.5.mlp.fc1.bias is on device: cuda:0
+Parameter blocks.5.mlp.fc2.weight is on device: cuda:0
+Parameter blocks.5.mlp.fc2.bias is on device: cuda:0
+Parameter blocks.6.norm1.weight is on device: cuda:0
+Parameter blocks.6.norm1.bias is on device: cuda:0
+Parameter blocks.6.attn.qkv.weight is on device: cuda:0
+Parameter blocks.6.attn.qkv.bias is on device: cuda:0
+Parameter blocks.6.attn.proj.weight is on device: cuda:0
+Parameter blocks.6.attn.proj.bias is on device: cuda:0
+Parameter blocks.6.norm2.weight is on device: cuda:0
+Parameter blocks.6.norm2.bias is on device: cuda:0
+Parameter blocks.6.mlp.fc1.weight is on device: cuda:0
+Parameter blocks.6.mlp.fc1.bias is on device: cuda:0
+Parameter blocks.6.mlp.fc2.weight is on device: cuda:0
+Parameter blocks.6.mlp.fc2.bias is on device: cuda:0
+Parameter blocks.7.norm1.weight is on device: cuda:0
+Parameter blocks.7.norm1.bias is on device: cuda:0
+Parameter blocks.7.attn.qkv.weight is on device: cuda:0
+Parameter blocks.7.attn.qkv.bias is on device: cuda:0
+Parameter blocks.7.attn.proj.weight is on device: cuda:0
+Parameter blocks.7.attn.proj.bias is on device: cuda:0
+Parameter blocks.7.norm2.weight is on device: cuda:0
+Parameter blocks.7.norm2.bias is on device: cuda:0
+Parameter blocks.7.mlp.fc1.weight is on device: cuda:0
+Parameter blocks.7.mlp.fc1.bias is on device: cuda:0
+Parameter blocks.7.mlp.fc2.weight is on device: cuda:0
+Parameter blocks.7.mlp.fc2.bias is on device: cuda:0
+Parameter blocks.8.norm1.weight is on device: cuda:0
+Parameter blocks.8.norm1.bias is on device: cuda:0
+Parameter blocks.8.attn.qkv.weight is on device: cuda:0
+Parameter blocks.8.attn.qkv.bias is on device: cuda:0
+Parameter blocks.8.attn.proj.weight is on device: cuda:0
+Parameter blocks.8.attn.proj.bias is on device: cuda:0
+Parameter blocks.8.norm2.weight is on device: cuda:0
+Parameter blocks.8.norm2.bias is on device: cuda:0
+Parameter blocks.8.mlp.fc1.weight is on device: cuda:0
+Parameter blocks.8.mlp.fc1.bias is on device: cuda:0
+Parameter blocks.8.mlp.fc2.weight is on device: cuda:0
+Parameter blocks.8.mlp.fc2.bias is on device: cuda:0
+Parameter blocks.9.norm1.weight is on device: cuda:0
+Parameter blocks.9.norm1.bias is on device: cuda:0
+Parameter blocks.9.attn.qkv.weight is on device: cuda:0
+Parameter blocks.9.attn.qkv.bias is on device: cuda:0
+Parameter blocks.9.attn.proj.weight is on device: cuda:0
+Parameter blocks.9.attn.proj.bias is on device: cuda:0
+Parameter blocks.9.norm2.weight is on device: cuda:0
+Parameter blocks.9.norm2.bias is on device: cuda:0
+Parameter blocks.9.mlp.fc1.weight is on device: cuda:0
+Parameter blocks.9.mlp.fc1.bias is on device: cuda:0
+Parameter blocks.9.mlp.fc2.weight is on device: cuda:0
+Parameter blocks.9.mlp.fc2.bias is on device: cuda:0
+Parameter blocks.10.norm1.weight is on device: cuda:0
+Parameter blocks.10.norm1.bias is on device: cuda:0
+Parameter blocks.10.attn.qkv.weight is on device: cuda:0
+Parameter blocks.10.attn.qkv.bias is on device: cuda:0
+Parameter blocks.10.attn.proj.weight is on device: cuda:0
+Parameter blocks.10.attn.proj.bias is on device: cuda:0
+Parameter blocks.10.norm2.weight is on device: cuda:0
+Parameter blocks.10.norm2.bias is on device: cuda:0
+Parameter blocks.10.mlp.fc1.weight is on device: cuda:0
+Parameter blocks.10.mlp.fc1.bias is on device: cuda:0
+Parameter blocks.10.mlp.fc2.weight is on device: cuda:0
+Parameter blocks.10.mlp.fc2.bias is on device: cuda:0
+Parameter blocks.11.norm1.weight is on device: cuda:0
+Parameter blocks.11.norm1.bias is on device: cuda:0
+Parameter blocks.11.attn.qkv.weight is on device: cuda:0
+Parameter blocks.11.attn.qkv.bias is on device: cuda:0
+Parameter blocks.11.attn.proj.weight is on device: cuda:0
+Parameter blocks.11.attn.proj.bias is on device: cuda:0
+Parameter blocks.11.norm2.weight is on device: cuda:0
+Parameter blocks.11.norm2.bias is on device: cuda:0
+Parameter blocks.11.mlp.fc1.weight is on device: cuda:0
+Parameter blocks.11.mlp.fc1.bias is on device: cuda:0
+Parameter blocks.11.mlp.fc2.weight is on device: cuda:0
+Parameter blocks.11.mlp.fc2.bias is on device: cuda:0
+Parameter norm.weight is on device: cuda:0
+Parameter norm.bias is on device: cuda:0
+Parameter head.weight is on device: cuda:0
+Parameter head.bias is on device: cuda:0
+loader_train is on device: cuda
+loader_val is on device: cuda
+model_result/model_pth/MODEL_FINETUNE_vit_base_patch16_224.orig_in21k_20240419_025430.pth
+-------------------------------[Epoch 1]--------------------------------- 
+[Epoch 1] Training... 
+==============================================================================================================================================================================================================================================================================================================================================================================
+[Epoch 1] Computing Train Measurement... 
+[Epoch 1] Update Learning Rate... 
+[Epoch 1] Computing Validation Measurement... 
+[Epoch 1] loss=9.32e+02 train accu=22.28% validation accu=25.86% 
+[Epoch 1] Model checkpoint is saved. 
+-------------------------------[Epoch 2]--------------------------------- 
+[Epoch 2] Training... 
+==============================================================================================================================================================================================================================================================================================================================================================================
+[Epoch 2] Computing Train Measurement... 
+[Epoch 2] Update Learning Rate... 
+[Epoch 2] Computing Validation Measurement... 
+[Epoch 2] loss=8.17e+02 train accu=25.66% validation accu=27.94% 
+[Epoch 2] Model checkpoint is saved. 
+-------------------------------[Epoch 3]--------------------------------- 
+[Epoch 3] Training... 
+==============================================================================================================================================================================================================================================================================================================================================================================
+[Epoch 3] Computing Train Measurement... 
+[Epoch 3] Update Learning Rate... 
+[Epoch 3] Computing Validation Measurement... 
+[Epoch 3] loss=7.86e+02 train accu=28.43% validation accu=30.96% 
+[Epoch 3] Model checkpoint is saved. 
+-------------------------------[Epoch 4]--------------------------------- 
+[Epoch 4] Training... 
+==============================================================================================================================================================================================================================================================================================================================================================================
+[Epoch 4] Computing Train Measurement... 
+[Epoch 4] Update Learning Rate... 
+[Epoch 4] Computing Validation Measurement... 
+[Epoch 4] loss=7.66e+02 train accu=29.94% validation accu=32.24% 
+[Epoch 4] Model checkpoint is saved. 
+-------------------------------[Epoch 5]--------------------------------- 
+[Epoch 5] Training... 
+==============================================================================================================================================================================================================================================================================================================================================================================
+[Epoch 5] Computing Train Measurement... 
+[Epoch 5] Update Learning Rate... 
+[Epoch 5] Computing Validation Measurement... 
+[Epoch 5] loss=7.50e+02 train accu=31.13% validation accu=32.53% 
+[Epoch 5] Model checkpoint is saved. 
+-------------------------------[Epoch 6]--------------------------------- 
+[Epoch 6] Training... 
+==============================================================================================================================================================================================================================================================================================================================================================================
+[Epoch 6] Computing Train Measurement... 
+[Epoch 6] Update Learning Rate... 
+[Epoch 6] Computing Validation Measurement... 
+[Epoch 6] loss=7.37e+02 train accu=32.16% validation accu=34.01% 
+[Epoch 6] Model checkpoint is saved. 
+-------------------------------[Epoch 7]--------------------------------- 
+[Epoch 7] Training... 
+==============================================================================================================================================================================================================================================================================================================================================================================
+[Epoch 7] Computing Train Measurement... 
+[Epoch 7] Update Learning Rate... 
+[Epoch 7] Computing Validation Measurement... 
+[Epoch 7] loss=7.29e+02 train accu=32.99% validation accu=33.81% 
+[Epoch 7] Model checkpoint is saved. 
+-------------------------------[Epoch 8]--------------------------------- 
+[Epoch 8] Training... 
+==============================================================================================================================================================================================================================================================================================================================================================================
+[Epoch 8] Computing Train Measurement... 
+[Epoch 8] Update Learning Rate... 
+[Epoch 8] Computing Validation Measurement... 
+[Epoch 8] loss=7.25e+02 train accu=33.33% validation accu=34.59% 
+[Epoch 8] Model checkpoint is saved. 
+-------------------------------[Epoch 9]--------------------------------- 
+[Epoch 9] Training... 
+==============================================================================================================================================================================================================================================================================================================================================================================
+[Epoch 9] Computing Train Measurement... 
+[Epoch 9] Update Learning Rate... 
+[Epoch 9] Computing Validation Measurement... 
+[Epoch 9] loss=7.19e+02 train accu=33.92% validation accu=34.04% 
+[Epoch 9] Model checkpoint is saved. 
+-------------------------------[Epoch 10]--------------------------------- 
+[Epoch 10] Training... 
+==============================================================================================================================================================================================================================================================================================================================================================================
+[Epoch 10] Computing Train Measurement... 
+[Epoch 10] Update Learning Rate... 
+[Epoch 10] Computing Validation Measurement... 
+[Epoch 10] loss=7.15e+02 train accu=34.09% validation accu=34.63% 
+[Epoch 10] Model checkpoint is saved. 
+-------------------------------[Epoch 11]--------------------------------- 
+[Epoch 11] Training... 
+==============================================================================================================================================================================================================================================================================================================================================================================
+[Epoch 11] Computing Train Measurement... 
+[Epoch 11] Update Learning Rate... 
+[Epoch 11] Computing Validation Measurement... 
+[Epoch 11] loss=7.10e+02 train accu=34.35% validation accu=35.19% 
+[Epoch 11] Model checkpoint is saved. 
+-------------------------------[Epoch 12]--------------------------------- 
+[Epoch 12] Training... 
+==============================================================================================================================================================================================================================================================================================================================================================================
+[Epoch 12] Computing Train Measurement... 
+[Epoch 12] Update Learning Rate... 
+[Epoch 12] Computing Validation Measurement... 
+[Epoch 12] loss=7.08e+02 train accu=34.65% validation accu=34.62% 
+[Epoch 12] Model checkpoint is saved. 
+-------------------------------[Epoch 13]--------------------------------- 
+[Epoch 13] Training... 
+==============================================================================================================================================================================================================================================================================================================================================================================
+[Epoch 13] Computing Train Measurement... 
+[Epoch 13] Update Learning Rate... 
+[Epoch 13] Computing Validation Measurement... 
+[Epoch 13] loss=7.04e+02 train accu=34.74% validation accu=35.20% 
+[Epoch 13] Model checkpoint is saved. 
+-------------------------------[Epoch 14]--------------------------------- 
+[Epoch 14] Training... 
+==============================================================================================================================================================================================================================================================================================================================================================================
+[Epoch 14] Computing Train Measurement... 
+[Epoch 14] Update Learning Rate... 
+[Epoch 14] Computing Validation Measurement... 
+[Epoch 14] loss=7.03e+02 train accu=34.85% validation accu=34.52% 
+[Epoch 14] Model checkpoint is saved. 
+-------------------------------[Epoch 15]--------------------------------- 
+[Epoch 15] Training... 
+==============================================================================================================================================================================================================================================================================================================================================================================
+[Epoch 15] Computing Train Measurement... 
+[Epoch 15] Update Learning Rate... 
+[Epoch 15] Computing Validation Measurement... 
+[Epoch 15] loss=6.98e+02 train accu=35.43% validation accu=35.51% 
+[Epoch 15] Model checkpoint is saved. 
+-------------------------------[Epoch 16]--------------------------------- 
+[Epoch 16] Training... 
+==============================================================================================================================================================================================================================================================================================================================================================================
+[Epoch 16] Computing Train Measurement... 
+[Epoch 16] Update Learning Rate... 
+[Epoch 16] Computing Validation Measurement... 
+[Epoch 16] loss=6.95e+02 train accu=35.63% validation accu=35.14% 
+[Epoch 16] Model checkpoint is saved. 
+-------------------------------[Epoch 17]--------------------------------- 
+[Epoch 17] Training... 
+==============================================================================================================================================================================================================================================================================================================================================================================
+[Epoch 17] Computing Train Measurement... 
+[Epoch 17] Update Learning Rate... 
+[Epoch 17] Computing Validation Measurement... 
+[Epoch 17] loss=6.94e+02 train accu=35.62% validation accu=35.80% 
+[Epoch 17] Model checkpoint is saved. 
+-------------------------------[Epoch 18]--------------------------------- 
+[Epoch 18] Training... 
+==============================================================================================================================================================================================================================================================================================================================================================================
+[Epoch 18] Computing Train Measurement... 
+[Epoch 18] Update Learning Rate... 
+[Epoch 18] Computing Validation Measurement... 
+[Epoch 18] loss=6.91e+02 train accu=35.75% validation accu=35.95% 
+[Epoch 18] Model checkpoint is saved. 
+-------------------------------[Epoch 19]--------------------------------- 
+[Epoch 19] Training... 
+==============================================================================================================================================================================================================================================================================================================================================================================
+[Epoch 19] Computing Train Measurement... 
+[Epoch 19] Update Learning Rate... 
+[Epoch 19] Computing Validation Measurement... 
+[Epoch 19] loss=6.87e+02 train accu=35.93% validation accu=35.10% 
+[Epoch 19] Model checkpoint is saved. 
+-------------------------------[Epoch 20]--------------------------------- 
+[Epoch 20] Training... 
+==============================================================================================================================================================================================================================================================================================================================================================================
+[Epoch 20] Computing Train Measurement... 
+[Epoch 20] Update Learning Rate... 
+[Epoch 20] Computing Validation Measurement... 
+[Epoch 20] loss=6.85e+02 train accu=36.32% validation accu=35.77% 
+[Epoch 20] Model checkpoint is saved. 
+-------------------------------[Epoch 21]--------------------------------- 
+[Epoch 21] Training... 
+==============================================================================================================================================================================================================================================================================================================================================================================
+[Epoch 21] Computing Train Measurement... 
+[Epoch 21] Update Learning Rate... 
+[Epoch 21] Computing Validation Measurement... 
+[Epoch 21] loss=6.84e+02 train accu=36.13% validation accu=35.53% 
+[Epoch 21] Model checkpoint is saved. 
+-------------------------------[Epoch 22]--------------------------------- 
+[Epoch 22] Training... 
+==============================================================================================================================================================================================================================================================================================================================================================================
+[Epoch 22] Computing Train Measurement... 
+[Epoch 22] Update Learning Rate... 
+[Epoch 22] Computing Validation Measurement... 
+[Epoch 22] loss=6.81e+02 train accu=36.36% validation accu=35.19% 
+[Epoch 22] Model checkpoint is saved. 
+-------------------------------[Epoch 23]--------------------------------- 
+[Epoch 23] Training... 
+==============================================================================================================================================================================================================================================================================================================================================================================
+[Epoch 23] Computing Train Measurement... 
+[Epoch 23] Update Learning Rate... 
+[Epoch 23] Computing Validation Measurement... 
+[Epoch 23] loss=6.76e+02 train accu=36.82% validation accu=34.80% 
+[Epoch 23] Model checkpoint is saved. 
+-------------------------------[Epoch 24]--------------------------------- 
+[Epoch 24] Training... 
+==============================================================================================================================================================================================================================================================================================================================================================================
+[Epoch 24] Computing Train Measurement... 
+[Epoch 24] Update Learning Rate... 
+[Epoch 24] Computing Validation Measurement... 
+[Epoch 24] loss=6.75e+02 train accu=37.06% validation accu=34.32% 
+[Epoch 24] Model checkpoint is saved. 
+-------------------------------[Epoch 25]--------------------------------- 
+[Epoch 25] Training... 
+==============================================================================================================================================================================================================================================================================================================================================================================
+[Epoch 25] Computing Train Measurement... 
+[Epoch 25] Update Learning Rate... 
+[Epoch 25] Computing Validation Measurement... 
+[Epoch 25] loss=6.72e+02 train accu=37.05% validation accu=35.63% 
+[Epoch 25] Model checkpoint is saved. 
+-------------------------------[Epoch 26]--------------------------------- 
+[Epoch 26] Training... 
+==============================================================================================================================================================================================================================================================================================================================================================================
+[Epoch 26] Computing Train Measurement... 
+[Epoch 26] Update Learning Rate... 
+[Epoch 26] Computing Validation Measurement... 
+[Epoch 26] loss=6.72e+02 train accu=36.87% validation accu=35.03% 
+[Epoch 26] Model checkpoint is saved. 
+-------------------------------[Epoch 27]--------------------------------- 
+[Epoch 27] Training... 
+==============================================================================================================================================================================================================================================================================================================================================================================
+[Epoch 27] Computing Train Measurement... 
+[Epoch 27] Update Learning Rate... 
+[Epoch 27] Computing Validation Measurement... 
+[Epoch 27] loss=6.66e+02 train accu=37.26% validation accu=35.51% 
+[Epoch 27] Model checkpoint is saved. 
+-------------------------------[Epoch 28]--------------------------------- 
+[Epoch 28] Training... 
+==============================================================================================================================================================================================================================================================================================================================================================================
+[Epoch 28] Computing Train Measurement... 
+[Epoch 28] Update Learning Rate... 
+[Epoch 28] Computing Validation Measurement... 
+[Epoch 28] loss=6.64e+02 train accu=37.73% validation accu=35.46% 
+[Epoch 28] Model checkpoint is saved. 
+-------------------------------[Epoch 29]--------------------------------- 
+[Epoch 29] Training... 
+==============================================================================================================================================================================================================================================================================================================================================================================
+[Epoch 29] Computing Train Measurement... 
+[Epoch 29] Update Learning Rate... 
+[Epoch 29] Computing Validation Measurement... 
+[Epoch 29] loss=6.61e+02 train accu=37.79% validation accu=35.40% 
+[Epoch 29] Model checkpoint is saved. 
+-------------------------------[Epoch 30]--------------------------------- 
+[Epoch 30] Training... 
+==============================================================================================================================================================================================================================================================================================================================================================================
+[Epoch 30] Computing Train Measurement... 
+[Epoch 30] Update Learning Rate... 
+[Epoch 30] Computing Validation Measurement... 
+[Epoch 30] loss=6.59e+02 train accu=37.85% validation accu=35.23% 
+[Epoch 30] Model checkpoint is saved. 
+
+
+Final model saved. Training Finished. 
