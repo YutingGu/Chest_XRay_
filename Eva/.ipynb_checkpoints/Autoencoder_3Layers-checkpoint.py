@@ -29,22 +29,22 @@ from tqdm import tqdm
 
 # Autoencoder model
 class Autoencoder(nn.Module):
-    def __init__(self, encoding_dim, hidden_dim):
+    def __init__(self, encoding_dim, hidden_dim_1, hidden_dim_2):
         super(Autoencoder, self).__init__()
         self.encoder = nn.Sequential(
-            nn.Linear(3 * 224 * 224, hidden_dim),
+            nn.Linear(3 * 512 * 512, hidden_dim_1),
             nn.ReLU(),
-            nn.Linear(hidden_dim, 64),
+            nn.Linear(hidden_dim_1, hidden_dim_2),
             nn.ReLU(),
-            nn.Linear(64, encoding_dim),
+            nn.Linear(hidden_dim_2, encoding_dim),
             nn.ReLU()
         )
         self.decoder = nn.Sequential(
-            nn.Linear(encoding_dim, 64),
+            nn.Linear(encoding_dim, hidden_dim_2),
             nn.ReLU(),
-            nn.Linear(64, hidden_dim),
+            nn.Linear(hidden_dim_2, hidden_dim_1),
             nn.ReLU(),
-            nn.Linear(hidden_dim, 3 * 224 * 224),
+            nn.Linear(hidden_dim_1, 3 * 512 * 512),
             nn.Sigmoid()
         )
  
@@ -58,7 +58,7 @@ class Autoencoder(nn.Module):
         # decoder
         x = self.decoder(x)
         # reshape
-        x = x.view(batchsz, 3, 224, 224)
+        x = x.view(batchsz, 3, 512, 512)
         
         return x  
 
@@ -78,15 +78,15 @@ else:
 from timm.data import create_dataset, create_loader
 
 # config 
-input_size = 3, 224, 224
-img_size = 224
+input_size = 3, 512, 512
+img_size = 512
 num_classes = 15
 batch_size = 128
 
-hidden_dim = 128
-latent_dim = 32
+hidden_dim_1 = 256
+hidden_dim_2 = 128
+encoding_dim = 64
 learning_rate = 0.001     # 学习率
-num_epochs = 50     # 迭代次数
 
 interpolation = 'bicubic'
 DEFAULT_CROP_PCT = 1
@@ -122,7 +122,7 @@ print('Validation set size: ' + str(val_len))
 # resize images to fit the input of pretrained model
 transform = transforms.Compose([
     #transforms.Grayscale(num_output_channels=3),
-    transforms.Resize((224, 224)),
+    transforms.Resize((512, 512)),
     transforms.ToTensor()
 ])
 
@@ -152,7 +152,7 @@ val_loader = create_loader(
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(device) # if print 'cuda' then GPU is used
 
-autoencoder = Autoencoder(latent_dim,hidden_dim).to(device)
+autoencoder = Autoencoder(encoding_dim,hidden_dim_1,hidden_dim_2).to(device)
 
 # Check if CUDA (GPU) is available
 if torch.cuda.is_available():
@@ -223,3 +223,5 @@ for epoch in range(num_epochs):
 # Save model
 torch.save(autoencoder, f'model_result/model_pth/MODEL_{model_name}_{date_time}.pth')
 print('Autoencoder training complete.')
+
+
